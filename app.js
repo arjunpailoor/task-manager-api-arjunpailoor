@@ -80,7 +80,7 @@ app.put('/tasks/:id', (req, res) => {
   res.json(task);
 });
 
-//Delete a task by its ID.
+//Delete a task by its ID
 app.delete('/tasks/:id', (req, res) => {
   const id = Number(req.params.id);
   const index = tasks.findIndex(t => t.id === id);
